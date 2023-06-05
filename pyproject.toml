@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aurora-plugin-sounddevice"
+version = "0.0.1"
+authors = [
+    { name="Evgeniy Mazalov", email="guyboe@gmail.com" },
+]
+description = "Add sounddevice listening compatibility to Aurora voice assistant"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "typer==0.9.0",
+    "kombu==5.2.4",
+    "ffmpeg-python==0.2.0",
+    "sounddevice==0.4.5",
+    "pydantic-another-config",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/guybo/aurora-plugin-sounddevice"
+"Bug Tracker" = "https://gitlab.com/guybo/aurora-plugin-sounddevice/issues"
